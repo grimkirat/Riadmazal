@@ -1,0 +1,122 @@
+
+
+{% extends '::base.html.twig' %}
+
+
+
+ 
+{% block body %}
+
+<div class="col-md-12 col-lg-12 col-xs-12">
+							<div class="col-md-12 col-lg-12 col-xs-12">
+								<h3>contact</h3>
+								</div>
+                                	<div class="text">
+					<p>{{ "Pour_tous_renseignements_veuillez_remplir_le_formulaire_ou_nous_contacter_directement"|trans() }}</p>
+					</div>
+  <div class="row">
+      <div class="col-md-6 col-lg-6 col-xs-12">
+          <form id="contact-form" class="form" action="#" method="POST" role="form">
+              <div class="form-group">
+                  <label class="form-label" for="name">{{ "Nom_Complet"|trans() }}</label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Nom" tabindex="1" required>
+              </div>                            
+              <div class="form-group">
+                  <label class="form-label" for="email"> {{ "Email"|trans() }}</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder=" Email" tabindex="2" required>
+              </div>                            
+              <div class="form-group">
+                  <label class="form-label" for="subject">{{ "Sujet"|trans() }}</label>
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Sujet" tabindex="3">
+              </div>                            
+              <div class="form-group">
+                  <label class="form-label" for="message">{{ "Message"|trans() }}</label>
+                  <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>                                 
+              </div>
+              <div class="text-center">
+                  <button type="submit" class="btn btn-start-order">{{ "Envoyer"|trans() }}</button>
+              </div>
+          </form>
+      </div>
+          	
+						<div class="col-md-6 col-lg-6 col-xs-12">
+						<h3 class="block-title">Localisation</h3>
+								
+									<div class="col-md-12 col-lg-12 col-xs-12" >
+										<iframe src="https://maps.google.com/maps?ie=UTF8&amp;cid=11373724376070200429&amp;q=Riad+mazal&amp;gl=US&amp;hl=fr&amp;hq=Riad+mazal&amp;hnear=&amp;ll=31.642695,-8.012294&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe>
+									</div>
+										
+									<div class="text">
+										<div class="contacts"><p>Riad Mazal | Villa N° 28 Lot. Albelk, Quartier Semlalia Guéliz, Marrakech - Maroc.</p>
+										
+										<p>Tél/Fax: 00212 (0)5 24 42 07 20</p>
+										
+										<p>GSM : 00212 (0)6 61 14 87 83</p>
+										
+										<a class="text-bold" href="mailto:riadmazal@gmail.com">riadmazal@gmail.com</a></div>
+																				
+									</div>
+                                               
+                                    <div class="col-md-12 col-lg-12 col-xs-12">
+								
+							
+                            <div class="text">
+                            <p>En arrivant de sud pour Boulevard Yacoub El Mansour en direction nord, tourner à gauche au croisement avec Rue Erraouda à la hauteur du <a href="#">Restaurant Casanova</a> au feu rouge,  embouchée Rue <a href="#">Erraouda</a>, tourné à la seconde sortie à gauche, donc à droite : au fond de la route vous trouverez <a href="#">Riad Mazal</a>.</p>
+                            </div>
+								</div>
+					 </div></div> </div>
+ {% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
+
+   
+        {% block javascripts %} 
+            <script>
+                $(document).ready(function() {
+	// Test for placeholder support
+    $.support.placeholder = (function(){
+        var i = document.createElement('input');
+        return 'placeholder' in i;
+    })();
+
+    // Hide labels by default if placeholders are supported
+    if($.support.placeholder) {
+        $('.form-label').each(function(){
+            $(this).addClass('js-hide-label');
+        });  
+
+        // Code for adding/removing classes here
+        $('.form-group').find('input, textarea').on('keyup blur focus', function(e){
+            
+            // Cache our selectors
+            var $this = $(this),
+                $parent = $this.parent().find("label");
+
+            if (e.type === 'keyup') {
+                if( $this.val() ==='' ) {
+                    $parent.addClass('js-hide-label'); 
+                } else {
+                    $parent.removeClass('js-hide-label');   
+                }                     
+            } 
+            else if (e.type === 'blur') {
+                if( $this.val() === '' ) {
+                    $parent.addClass('js-hide-label');
+                } 
+                else {
+                    $parent.removeClass('js-hide-label').addClass('js-unhighlight-label');
+                }
+            } 
+            else if (e.type === 'focus') {
+                if( $this.val() !== '' ) {
+                    $parent.removeClass('js-unhighlight-label');
+                }
+            }
+        });
+    } 
+});
+                </script>
+     
+{% endblock %}

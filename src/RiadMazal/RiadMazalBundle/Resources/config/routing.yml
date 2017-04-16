@@ -1,0 +1,42 @@
+riad_mazal_homepage:
+    path:   /
+    defaults: { _controller: RiadMazalBundle:Default:index }
+gallery:
+    path: /discover
+    defaults: { _controller: RiadMazalBundle:Default:discover }
+rooms:
+    path: /rooms
+    defaults: { _controller: RiadMazalBundle:Default:rooms }
+service:
+    path: /services
+    defaults: { _controller: RiadMazalBundle:Default:services }
+Marrakech_City:
+    path: /marrakech_Tour
+    defaults: { _controller: RiadMazalBundle:Default:city }
+clientAvis:
+    path: /client_Avis
+    defaults: { _controller: RiadMazalBundle:Default:clientAvis }
+Golf_Marrakech:
+    path: /Golf_Marrakech
+    defaults: { _controller: RiadMazalBundle:Default:golf }
+Quad_Marrakech:
+    path: /Quad_Marrakech
+    defaults: { _controller: RiadMazalBundle:Default:quad }
+Marrakech_en_Montgolfière:
+    path: /Marrakech_en_Montgolfière
+    defaults: { _controller: RiadMazalBundle:Default:montgolfiere }
+Tarifications:
+    path: /Tarification
+    defaults: { _controller: RiadMazalBundle:Default:tarification }
+Reservation:
+    path: /Reservation
+    defaults: { _controller: RiadMazalBundle:Default:reservation }
+Contact:
+    path: /Contact
+    defaults: { _controller: RiadMazalBundle:Default:contact }
+Offre:
+    path: /Offers_Promotions
+    defaults: { _controller: RiadMazalBundle:Default:offre }
+language :
+    path: /%locale%/
+    defaults: { _controller: RiadMazalBundle:Default:language }

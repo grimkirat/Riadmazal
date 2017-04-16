@@ -1,0 +1,211 @@
+
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<h3>{{ "Les_Services_du_Riad_Mazal"|trans()}}</h3>
+<div class="clearfix">
+	<div class="text">
+		<p>{{ "Dans_le_raffinement_des_chambres_du_Riad_Mazal_on_trouve_tout_le_charme_et_le_mystére_oriental"|trans()}}</p>
+	</div>
+	</div>
+    <ul  class="nav nav-pills rooms">
+			<li class="active">
+        <a  href="#Spa" data-toggle="tab"> {{ "Hammam_et_SPA"|trans()}}</a>
+			</li>
+			<li><a href="#Detente" data-toggle="tab"> {{ "Détente"|trans()}}</a>
+			</li>
+			<li><a href="#Restauration" data-toggle="tab"> {{ "Restauration"|trans()}}</a>
+			</li>
+  		<li><a href="#Spectacle" data-toggle="tab">{{ "Spectacle_et_soirée_orientale"|trans()}}</a>
+			</li>
+                        <li><a href="#Divers" data-toggle="tab">{{ "Divers_Services"|trans()}}</a>
+			</li>
+		</ul> <div class="col-lg-12 col-md-12 col-xs-12" >
+		<div class="tab-content clearfix">
+			  <div class="tab-pane active" id="Spa">
+                              <h3>{{ "Hammam_et_SPA"|trans()}} </h3>
+             
+             
+<div class="clearfix">
+	<div class="text">
+		<p>{{ "Hammam_et_SPA_text"|trans()}}</p>
+	</div>
+	</div>				
+                                <div id="gallery" style="display:none;">
+                                    <img alt="SPA" src="{{asset ("/images/images_petit/IMG_6225.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6225.jpg")}}"
+				data-description="SPA">
+                                    <img alt="SPA" src="{{asset ("/images/images_petit/IMG_6227.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6227.jpg")}}"
+				data-description="SPA">
+			
+			<img alt="SPA" src="{{asset ("/images/images_petit/IMG_6238.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6238.jpg")}}"
+				data-description="SPA">
+                        <img alt="SPA" src="{{asset ("/images/images_petit/IMG_6239.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6239.jpg")}}"
+				data-description="SPA">
+                        <img alt="Tente" src="{{asset ("/images/images_petit/IMG_6250.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6250.jpg")}}"
+				data-description="Tente">
+                        <img alt="Hamam" src="{{asset ("/images/images_petit/IMG_6302.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6302.jpg")}}"
+				data-description="Hamam">
+                        <img alt="Hamam" src="{{asset ("/images/images_petit/IMG_6239.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6239.jpg")}}"
+				data-description="Hamam">
+                       
+</div>
+</div>
+
+
+				
+				<div class="tab-pane" id="Detente">
+       
+                  <h3>  {{ "Détente"|trans()}}</h3>
+               
+						<div class="text">
+                                                    {{ "Détente_text"|trans()}}
+						
+						</div> 
+                                                          
+								
+                                                    <div id="detente" style="display:none;">
+                                                        <img alt="Piscine exterieur" src="{{asset ("/images/images_petit/IMG_6133.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6133.jpg")}}"
+                                                    data-description="Piscine exterieur">
+                                                        <img alt="Piscine exterieur" src="{{asset ("/images/images_petit/IMG_6137.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6137.jpg")}}"
+                                                    data-description="Piscine exterieur">
+                                            <img alt="Solarium" src="{{asset ("/images/images_petit/IMG_6127.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6127.jpg")}}"
+                                                    data-description="Solarium">
+
+                                     <img alt="Terrasse" src="{{asset ("/images/images_petit/IMG_6267.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6267.jpg")}}"
+                                                    data-description="Terrasse">
+                                            <img alt="Terrasse" src="{{asset ("/images/images_petit/IMG_6273.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6273.jpg")}}"
+                                                    data-description="Terrasse">
+                                            <img alt="Terrasse" src="{{asset ("/images/images_petit/terrasse.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/terrasse.jpg")}}"
+                                                    data-description="Terrasse">
+                                            <img alt="Salon Marocain" src="{{asset ("/images/images_petit/IMG_6041.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6041.jpg")}}"
+                                                    data-description="Salon Marocain">
+                                            <img alt="Salon Marocain" src="{{asset ("/images/images_petit/IMG_6058.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6058.jpg")}}"
+                                                    data-description="Salon Marocain">
+                                            <img alt="Salon Européen" src="{{asset ("/images/images_petit/IMG_6068.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6068.jpg")}}"
+                                                    data-description="Salon Européen">
+                                            <img alt="Tv & Salon" src="{{asset ("/images/images_petit/IMG_6069.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6069.jpg")}}"
+                                                    data-description="Tv & Salon">
+                                            <img alt="Salon Européen" src="{{asset ("/images/images_petit/IMG_6084.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6084.jpg")}}"
+                                                    data-description="Salon Européen">
+                                            <img alt="Salon & Tv" src="{{asset ("/images/images_petit/IMG_6073.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6073.jpg")}}"
+                                                    data-description="Tv & Salon">
+</div>
+
+</div> 
+                               
+        <div class="tab-pane" id="Restauration">
+                    <h3>  {{ "Restauration"|trans()}}</h3>
+                 
+						<div class="text">
+						<p>{{ "Restauration_text"|trans()}}</p>
+						</div>
+						
+						
+                              
+								
+                                                    <div id="restaurant" style="display:none;">
+                                                        <img alt="Restaurant" src="{{asset ("/images/images_petit/IMG_6287.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_6287.jpg")}}"
+                                                    data-description="Restaurant">
+                                                        <img alt="Restaurant" src="{{asset ("/images/images_petit/tente.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/tente.jpg")}}"
+                                                    data-description="Restaurant">
+
+                                            <img alt="Salle à manger" src="{{asset ("/images/images_petit/IMG_001.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/IMG_001.jpg")}}"
+                                                    data-description="Salle à manger"> 
+                                          
+
+</div>
+</div>
+       
+          <div class="tab-pane" id="Spectacle">
+          <h3>  {{ "Spectacle_et_soirée_orientale"|trans()}}</h3>
+                  
+						<div class="text">
+						<p><a href="#">Riad Mazal</a>
+                                                    {{ "Spectacle_et_soirée_orientale_text"|trans()}}</p>
+						</div>
+							
+                                                    <div id="soire" style="display:none;">
+                                                        <img alt="{{ "Spectacle_et_soirée_orientale"|trans()}}e" src="{{asset ("/images/images_petit/foto.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/foto.jpg")}}"
+                                                    data-description="{{ "Spectacle_et_soirée_orientale"|trans()}}">
+                                                      
+                                           
+
+</div>
+</div>
+   <div class="tab-pane" id="Divers">
+          <h3> {{ "Divers_Services"|trans()}} </h3>
+                  
+						<div class="text">
+					 <ul class="list-group">
+                                            	<li class="list-group-item">{{ "Divers_Services_Transferts_toute_destinations"|trans()}}</li>
+                                                <li class="list-group-item">{{ "Divers_Services_Réservations_de_restaurants"|trans()}}</li>
+                                                <li class="list-group-item">WIFI.</li>
+                                                <li class="list-group-item" class="list-group-item">Parking.</li>
+                                                <li class="list-group-item">Blanchisserie.</li>
+                                                <li class="list-group-item">Baby sitting.</li>
+                                            </ul> 
+						</div>
+						
+                            
+								
+                                                    <div id="ChambreEtoile" style="display:none;">
+                                                        <img alt="Spectacle et soirée orientale" src="{{asset ("/images/images_petit/foto.jpg")}}"
+                                                    data-image="{{asset ("/images/images_large/foto.jpg")}}"
+                                                    data-description="Spectacle et soirée orientale">
+                                                      
+                                           
+
+</div>
+</div>
+ </div>  
+ </div>
+       	
+                
+                                                    
+                 
+			    {% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
+
+   
+        {% block javascripts %} 
+           <script> 
+			
+			jQuery(document).ready(function(){ 
+                      
+                                jQuery("#gallery").unitegallery(); 
+                                jQuery("#detente").unitegallery(); 
+				jQuery("#restaurant").unitegallery(); 
+                                jQuery("#soire").unitegallery();
+                                gallery_theme: "tiles";
+			}); 
+		
+		</script>
+     
+{% endblock %}
+	

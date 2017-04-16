@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="utf-8">
+    
+    <title> {{ "title_page"|trans() }}   </title>
+       
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+   <!-- Bootstrap Core CSS -->
+    <link href="{{asset ("css/bootstrap.min.css")}}" rel="stylesheet">
+    <link href="{{asset ("css/unite-gallery.css")}}" rel="stylesheet">
+    <link href="{{asset ("css/bootstrap-formhelpers.min.css")}}" rel="stylesheet">
+    <link href="{{asset (" https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css")}}" rel="stylesheet">
+    <link href="{{asset ("css/steps.css")}}" rel="stylesheet">
+    <link rel='stylesheet' href='{{asset ("css/ug-theme-default.css")}}' type='text/css' /> 
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine:700">
+ 
+    <!-- Custom CSS -->
+    <link href="{{asset ("css/font-awesome.min.css")}}" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<link href="{{asset ("images/favicon.png")}}" type="image/png" rel="icon">
+        <link rel="stylesheet" href="{{asset ("//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css")}}">
+         <link rel="stylesheet" type="text/css" media="all" href="{{asset ("css/carousel.css")}}" />
+    <meta name="google" value="notranslate">
+     <meta name="description" content="Riad Mazal : Riad in the Red City Marrakech Best Luxious Riads Hotels in Marrakech. free WIFI, SPA, Restaurant, Piscine, Special offers available now.Discount20% "> 
+    <meta name="keywords" content="{{ "Keywords_page"|trans() }} "> 
+  <meta name="language" content="en-En">
+  <meta http-equiv="content-language" content="en">
+  <meta name="identifier-url" content="http://www.riadmazal.com">
+  <meta name="robots" content="index,follow,all">
+  <meta name="publisher" content="Riad Mazal">
+
+<meta charset="UTF-8"></head>
+    <body>
+            <!-- Page Content -->
+        <div id="page-content-wrapper wrapper">
+              <div class="container-fluid"> 
+                    <div class="carousel slide carousel-fade" data-ride="carousel">
+    <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+        <div class="item active">
+        </div>
+        <div class="item">
+        </div>
+             <div class="item">
+        </div> <div class="item">
+        </div> <div class="item">
+        </div> <div class="item">
+        </div>
+        <div class="item">
+        </div>
+    </div>
+    </div>
+<div class="col-md-3 col-lg-3">
+                  <div class="logo">
+             <div id="logo-main" class="hidden-xs" >
+          <img class="img-responsive" src="{{ asset ('images/logo-icon.png') }}"  alt="Logo Thing main logo">
+             </div>
+             <div class="col-lg-9">
+                 
+             </div>
+              <div  id="logo-main" class="visible-xs " >
+          <img class="img-responsive" id="logo-main" src="{{ asset ('images/logo2.png') }}"  alt="Logo Thing main logo">
+              </div> 
+                  </div>
+              
+<div id="nav" role="navigation" >
+   <nav>
+            
+  <!-- Here i can add internationalisme design/widgets offers -->
+  
+             <a href="#nav" id="showMenu" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#show" >
+  <!-- The paragraph tags could easily be replaced with a single image instead -->
+  <p>   <i class="fa fa-bars fa-1x" aria-hidden="true"></i> Menu </p>
+  
+                  </a>
+     <ul id="accordion" class="accordion" >
+             
+              <div id="show"  class=" collapse navbar-collapse" >
+                          <li><a href="{{ path('riad_mazal_homepage') }}"> {{ "Accueil"|trans() }}</a></li>
+                       
+                          <li class="dropdown" ><a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ "Découvrir_le_Riad"|trans() }} </a>
+                            <ul class="dropdown-menu submenu"> 
+                                <li><a href="{{  path('gallery') }}">{{ "Découvrir_Le_Riad"|trans() }}</a></li>
+				<li><a href="{{  path('rooms') }}">{{ "Chambres"|trans() }}</a></li>
+				<li><a href="{{  path('clientAvis') }}">{{ "Avis_des_Cients"|trans() }}</a></li>
+				<li><a href="{{ path('service') }}">{{ "Services"|trans() }}</a></li>
+                            </ul>
+                          </li>
+                          
+                          <li class="dropdown" ><a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ "Excursions"|trans() }} </a>
+			 <ul class="dropdown-menu submenu "> 
+			<li><a href="{{ path('Marrakech_City') }}">{{ "Visites_de_ville_et_loisir"|trans() }}</a></li>
+			<li><a href="{{ path('Quad_Marrakech') }}">{{ "Quad_dans_la_Palmeraie"|trans() }}</a></li>
+			<li><a href="{{ path('Golf_Marrakech') }}">{{ "Jouer_au_Golf_à_Marrakech"|trans() }}</a></li>
+			<li><a href="{{ path('Marrakech_en_Montgolfière') }}">{{ "Marrakech_en_Montgolfière"|trans() }}</a></li>
+			</ul>
+                        </li>
+                        <li> <a href="{{ path('Tarifications') }}">{{ "Tarifications"|trans() }}</a></li>
+			<li><a href="{{ path('Reservation') }}">{{ "Réservation"|trans() }}</a></li>
+			 <li> <a href="{{ path('Contact') }}">{{ "Contact"|trans() }}</a></li>
+              </div>
+           </ul>
+   </nav>
+</div>
+</div> 
+              <div class=" col-lg-8 col-md-8 col-xs-12">
+                  <div class="row">
+                  <div class="" id="header">
+                        <div class="col-lg-3 col-md-3 col-xs-12">
+                            <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle language" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Language
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li class=" language"><a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'fr'})) }}"> <span class="bfh-languages language" data-language="fr_FR" data-flags="true"></span></a>
+                  </li>
+    <li class="language"> <a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en'})) }}"> <span class="bfh-languages language" data-language="en_US" data-flags="true"></span></a>
+                </li>
+    <li class="language">  <a href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'it'})) }}"> <span class="bfh-languages language" data-language="it_IT" data-flags="true"></span></a>
+       </li>
+   
+  </ul>
+</div>
+                    
+             </div>
+      
+  <p>
+ 
+  </p>
+<div class=" hidden">
+      <img src="{{asset('images/offer.png')}}">
+  </div>
+   <div class="Slogon col-lg-7 col-md-12 hidden-xs">
+  
+</div>
+     
+ 
+                  </div>
+                     
+     <div class="message col-md-12 col-xs-12 col-lg-12">
+         <div class="row" >
+             
+ 
+  
+         
+             <div class="col-lg-12 col-md-12 col-xs-12" > 
+        {% block body %}{% endblock %}
+         </div>
+              
+            </div>
+        </div>
+         
+         <div class="col-lg-12 col-md-12 col-xs-12">
+            <br />
+                <a href="https://www.facebook.com/riadmazal"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="https://plus.google.com/riadmazal"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+	            <a href="mailto:riadmazal@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+
+  </div>
+         <div class="col-lg-12 col-md-12 col-xs-12">
+            <br />
+           <div class="copy">
+               <p style="font-size: 12px"> &copy; 2017 Riad Mazal. All Rights Reserved | Design by <a href="#" target="_blank">Tariq Boujdi</a></p>
+            </div>
+  </div>
+         
+         </div>
+        </div>
+    </div>
+        <script src="{{asset ("js/jquery.js")}}"></script>
+    <script src="{{asset ("js/bootstrap.min.js")}}"></script>
+ 
+  
+        <script src="{{asset ("https://code.jquery.com/ui/1.12.0/jquery-ui.js")}}"></script>
+         <script src="{{asset ("https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js")}}"></script>  
+         <script src="{{asset ("https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/additional-methods.js")}}"></script> 
+<script src="{{asset ("//cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js")}}"></script>
+
+<script src="{{asset ("js/unitegallery.min.js")}}"></script>
+<script type='text/javascript' src='{{asset ("js/bootstrap-formhelpers.min.js")}}'></script> 
+
+<script type='text/javascript' src='{{asset ("js/bootstrap/bootstrap-formhelpers-selectbox.js")}}'></script> 
+<script type='text/javascript' src='{{asset ("js/ug-theme-tiles.js")}}'></script> 
+
+<script src="{{asset ("js/style.js")}}"></script>
+<script src="{{asset ("js/steps.min.js")}}"></script>
+
+{% block javascripts %}{% endblock %}
+</body>
+</html>

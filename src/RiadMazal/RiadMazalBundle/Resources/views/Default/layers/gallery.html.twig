@@ -1,0 +1,81 @@
+{% extends '::base.html.twig' %}
+
+
+
+ 
+{% block body %}
+
+<div class="col-md-12 col-lg-12 col-xs-12">
+    <h3> {{ "galery_title"|trans() }}</h3> 
+	
+	<div class="clearfix">
+	<div class="text">
+	<p>{{ "galery_text"|trans() }} </p>
+	</div>
+	</div>
+</div>
+							<div class="col-md-12 col-lg-12 col-xs-12">
+								<h3 > {{ "charte_galery"|trans() }}</h3>
+									<div class="col-lg-3 col-md-3 col-xs-12">
+									<img alt="" src="{{asset ("/images/2page-img2.png")}}">
+                                                                        </div>
+										<div class="text">
+									<div class="col-lg-8 col-md-8 col-xs-12">		
+                                            {{ "charte_galery_text"|trans() }}
+										</div>
+									</div>
+								</div>
+                                
+                        <div class="col-lg-12 col-md-12 col-xs-12" >
+							<div class="clearfix">
+                            
+								
+                                <div id="gallery" style="display:none;">
+                                    <img alt="Le bar" src="{{asset ("/images/images_petit/IMG_6029.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6029.jpg")}}"
+				data-description="Image 1 Description">
+                                    <img alt="Le bar" src="{{asset ("/images/images_petit/IMG_6292.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6292.jpg")}}"
+				data-description="Image 1 Description">
+			
+			<img alt="patio" src="{{asset ("/images/images_petit/IMG_6085.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6085.jpg")}}"
+				data-description="Image 2 Description">
+                        <img alt="patio" src="{{asset ("/images/images_petit/IMG_6062.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6062.jpg")}}"
+				data-description="Image 2 Description">
+                        <img alt="patio" src="{{asset ("/images/images_petit/IMG_6064.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6064.jpg")}}"
+				data-description="Image 2 Description">
+                        <img alt="patio" src="{{asset ("/images/images_petit/IMG_6047.jpg")}}"
+				data-image="{{asset ("/images/images_large/IMG_6047.jpg")}}"
+				data-description="Image 2 Description">
+                         <img alt="patio" src="{{asset ("/images/images_petit/terrasse1.jpg")}}"
+				data-image="{{asset ("/images/images_large/terrasse1.jpg")}}"
+				data-description="Image 2 Description">
+                        <img alt="patio" src="{{asset ("/images/images_petit/decouvri.jpg")}}"
+				data-image="{{asset ("/images/images_large/decouvri.jpg")}}"
+				data-description="Image 2 Description">
+		
+</div>
+</div>
+</div>
+
+{% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
+
+   
+        {% block javascripts %} 
+           <script type="text/javascript"> 
+			
+			jQuery(document).ready(function(){ 
+				jQuery("#gallery").unitegallery(); 
+                                gallery_theme: "tiles"
+			}); 
+		
+		</script>
+     
+{% endblock %}

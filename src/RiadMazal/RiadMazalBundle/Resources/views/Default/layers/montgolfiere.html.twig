@@ -1,0 +1,32 @@
+
+{% extends '::base.html.twig' %}
+{% block body %}
+<div class="col-md-12 col-lg-12 col-xs-12">
+							<div class="col-md-12 col-lg-12 col-xs-12">
+								<h3> {{ "Marrakech_en_Montgolfière"|trans() }}</h3>
+                                                        </div>
+			<div class="col-md-3 col-lg-3 col-xs-12">
+                            <img alt="" src="{{asset('/images/2page-img5.jpg')}}" /></div>
+                          <div class="col-md-9 col-lg-9 col-xs-12">  
+							<div class="text">
+   <p> {{ "Marrakech_en_Montgolfière_text"|trans() }}:</p>
+<ul class="list-group">
+            <li class="list-group-item">{{ "Départ_du_Riad"|trans() }}</li>
+            <li class="list-group-item">{{ "Transfert_en_4x4"|trans() }}</li>
+            <li class="list-group-item">{{ "Vol"|trans() }}</li>
+            <li class="list-group-item">{{ "Collation"|trans() }}</li>
+            <li class="list-group-item">{{ "Retour_par_les_pistes"|trans() }}</li>
+  </ul>
+ <p> {{ "vol_raison"|trans() }}</p>
+										</div>
+									</div>
+								</div>
+ {% endblock %}
+
+{% block stylesheets %}
+
+{% endblock %}
+{% block javascripts %} 
+         
+     
+{% endblock %}
