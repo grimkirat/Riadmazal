@@ -1,0 +1,48 @@
+
+{% block body %}
+
+    <div class="col-md-12 col-lg-12 col-xs-12">
+        <div class="col-md-6 col-lg-6 col-xs-12">
+            <h4>Information de reservation</h4>
+            <div class="text">
+                Nom et prénom : {{ name }}.<br>
+                E-mail : {{ email }}.<br>
+                Telephone : {{ phone }}<br>
+                pays : {{ pays }}.<br>
+                Type de chambre : {{ c_s }} 
+                  {{ c_l  }}
+                  {{ c_b }}
+                  {{ c_lis }}
+                  {{ c_a_e_c  }}
+                  {{ suit_b }}
+                  {{ suit_r }}
+                  {{ r_c }}<br>
+                  Nombre de nuits : {{ nuits_nombre }}<br>
+                  Date d'arrivée : {{ date_arrive }}.<br>
+                  Date départ : {{ date_depart }}.<br>
+                  Nombre d'adulte : {{ adule_nombre }}<br>
+                  Nombre d'enfant : {{ enfant_nombre }}<br>
+
+</div>
+ </div>
+        
+ <div class="col-md-6 col-lg-6 col-xs-12">
+     <h4> Complément </h4>
+     <div class="text">
+         
+         Observations : {{ optional }} <br>
+         plus : {{ spa }} , {{ dinner }}
+     </div>
+    </div>
+     <div class="col-md-6 col-lg-6 col-xs-12">
+     <h4> Information de Paiment </h4>
+     <div class="text">
+         Numero de carte : {{ num_carte }} <br>
+         Date d'experition  : {{ date_exp }} <br>
+         cvc :, {{ cvc }}<br>
+     </div>
+    </div>
+    </div>
+    
+ {% endblock %}
+

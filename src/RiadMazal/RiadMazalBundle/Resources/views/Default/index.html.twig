@@ -6,7 +6,7 @@
 {% block body %}
 
 							<div class="col-md-12 col-lg-12 col-xs-12">
-								<h3 class="block-title">Offres ET Promotions</h3>
+								<h3 class="block-title">{{ "promo_title"|trans()}}</h3>
 								
 									<div class="clearfix">
                                                                             <div class="col-lg-3 col-md-3 col-xs-12">
@@ -16,7 +16,21 @@
                                                                                  <div class="col-lg-9">
                                                                                  <div class="text">
                                         
-                                            	                                            	<p> {{ "promo_text"|trans()}}</p>
+                                            	                                            	<p> 
+                                                                                                     
+                                                                                                    {% for key,value in offres %}
+   
+    {% if local=='en' %}
+              {{ value.en }}
+      {% endif %}
+      {% if local=='fr' %} 
+              {{ value.fr }}
+ {% endif  %}
+ {% if local=='it' %}
+              {{ value.it }}
+ {% endif %}
+    
+{% endfor %}  </p>
                                                                                 
                                    
 										</div>

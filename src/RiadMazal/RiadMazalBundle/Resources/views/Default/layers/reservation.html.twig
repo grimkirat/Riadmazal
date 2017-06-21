@@ -3,28 +3,34 @@
 
 {% extends '::base.html.twig' %}
 {% block body %}
-
+     <div class="col-md-12 col-lg-12 col-xs-12">
+         <div class="text">
+              <p>
+                  {{ "Reservation_P"|trans()}}
+         </div>
+        
+     </div>
     <div class="col-md-12 col-lg-12 col-xs-12">
 		
 		
-<form method="post" name="contactform" id="contactform" action="">
+<form method="POST" name="contactform" id="contactform" action="{{  path('Mail') }}">
 <h3>{{ "Information_Personnel"|trans()}}</h3>
 <fieldset>
 <legend> {{ "Information_Personnel"|trans()}}</legend>
 <div class="col-lg-9 col-md-9 col-xs-12">
     <div class="input-group">
-  <span class="input-group-addon" id="nom"> {{ "Nom_Complet"|trans()}}</span>
+  <span class="input-group-addon language " id="nom"> {{ "Nom_Complet"|trans()}}</span>
   <input name="nom" type="text" class="form-control" placeholder="Nom Complet" aria-describedby="nom" required="required">
 </div>
     <br>
 <div class="input-group">
-     <span class="input-group-addon" id="email">@Email</span>
-  <input name="email" type="text" class="form-control" placeholder="Recipient's username" aria-describedby="email" required="required">
+     <span class="input-group-addon language" id="email">Email</span>
+  <input name="email" type="text" class="form-control" placeholder="email" aria-describedby="email" required="required">
 </div>
     <br>
     <div class="input-group">
   <span class="input-group-addon" id="Pays">{{ "Pays"|trans()}}</span>
-  <select name="pays"  class="selectpicker form-control" data-live-search="true" aria-describedby="Pays" title="Please select a lunch ..."> 
+  <select name="pays"  class="selectpicker form-control" data-live-search="true" aria-describedby="Pays" > 
 <option value="France" selected="selected">France</option>
 
 <option value="Afghanistan">Afghanistan </option>
@@ -277,7 +283,7 @@
         <input type="checkbox" aria-label="Chambre Soleil" id="cbox1" class="1" value="Chambre Soleil" name="c_s">
         
       </span>
-        <span class="input-group-addon">Chambre Soleil</span>
+        <span class="input-group-addon"> {{ "Chambre"|trans()}} Soleil</span>
     </div>
   </div>
     <div class="col-lg-3 col-md-4 col-xs-12">
@@ -286,7 +292,7 @@
         <input type="checkbox" aria-label="Chambre Lune" class="2" id="cbox1" value="Chambre Lune" name="c_l">
         
       </span>
-        <span class="input-group-addon">Chambre Lune</span>
+        <span class="input-group-addon">{{ "Chambre"|trans()}} Lune</span>
     </div>
   </div>
     <div class="col-lg-3 col-md-4 col-xs-12">
@@ -295,7 +301,7 @@
         <input type="checkbox" aria-label="Chambre Bleu" class="3" id="cbox1" value="Chambre Bleu" name="c_b">
         
       </span>
-        <span class="input-group-addon">Chambre Bleu</span>
+        <span class="input-group-addon">{{ "Chambre"|trans()}} Bleu</span>
     </div>
   </div>
         <div class="col-lg-3">
@@ -304,7 +310,7 @@
         <input type="checkbox" aria-label="Chambre Lis" class="4" id="cbox1" value="Chambre Bleu" name="c_lis">
         
       </span>
-        <span class="input-group-addon">Chambre Lis</span>
+        <span class="input-group-addon">{{ "Chambre"|trans()}} Lis</span>
     </div>
   </div>
     </div>
@@ -317,7 +323,7 @@
         <input type="checkbox" aria-label="Chambre Etoile" class="5" id="cbox1" value="Suite Etoile" name="c_e">
         
       </span>
-        <span class="input-group-addon">Chambre Etoile</span>
+        <span class="input-group-addon">{{ "Chambre"|trans()}} Etoile</span>
     </div>
   </div>
     <div class="col-lg-3 col-md-4 col-xs-12">
@@ -326,7 +332,7 @@
         <input type="checkbox" aria-label="Chambre Arc en Ciel" class="6" id="cbox1" value="Chambre Arc en Ciel" name="c_a_e_c">
         
       </span>
-        <span class="input-group-addon">Chambre Arc en Ciel</span>
+        <span class="input-group-addon">{{ "Chambre"|trans()}} Arc en Ciel</span>
     </div>
   </div>
     <div class="col-lg-3 col-md-4 col-xs-12">
@@ -353,28 +359,28 @@
          <div class="col-lg-6 col-md-6 col-xs-12 ">
     <div class="input-group ">
       <span class="input-group-addon ">
-        <input input type="checkbox" class="9" id="cbox1" value="Riad Complet" name="suit_c" type="checkbox" aria-label="Riad Complet">
+        <input input type="checkbox" class="9" id="cbox1" value="Riad Complet" name="r_c" type="checkbox" aria-label="Riad Complet">
         
       </span>
         <span class="input-group-addon">Riad Complet</span>
     </div>
          </div>
- <input type="hidden"  id="1" value="990" name="c_s">
-<input  type="hidden" id="2" value="990" name="c_l" >
-<input  type="hidden" id="3" value="990" name="c_l" name="c_b" >
-<input  type="hidden"  id="4" value="1320" name="c_lis" >
-<input  type="hidden" id="5" value="1320" name="c_e" >
-<input  type="hidden" id="6" value="1540" nname="c_a_e_c"  >
+ <input type="hidden"  id="1" value="990" name="c_ss">
+<input  type="hidden" id="2" value="990" name="c_ls" >
+<input  type="hidden" id="3" value="990" name="c_ls"  >
+<input  type="hidden"  id="4" value="1320" name="c_liss" >
+<input  type="hidden" id="5" value="1320" name="c_es" >
+<input  type="hidden" id="6" value="1540" nname="c_a_e_cs"  >
 
-<input  type="hidden" id="7" value="1320" name="suit_b" >
-<input  type="hidden" id="8" value="1980" name="suit_r" >
-<input  type="hidden" id="9" value="10450" name="suit_c" >
+<input  type="hidden" id="7" value="1320" name="suit_bs" >
+<input  type="hidden" id="8" value="1980" name="suit_rs" >
+<input  type="hidden" id="9" value="10450" name="suit_cs" >
   </div>
     <br>
 <div class="row">
  <div class="col-lg-6 col-md-6 col-xs-12 ">
       <div class="input-group">
-  <span class="input-group-addon" id="adulte">{{ "Nombre_d_adulte"|trans()}}</span>
+  <span class="input-group-addon " id="adulte">{{ "Nombre_d_adulte"|trans()}}</span>
   <input name="nb_adu" type="text" id="nb_adu" placeholder="1" class="form-control bfh-number" aria-describedby="adulte" required="required">
         </div>
     </div>
@@ -424,42 +430,64 @@
 <h3> {{ "plus_d_informations"|trans()}}</h3>
 <fieldset>
 <legend> {{ "Information_Optional"|trans()}}</legend>
+<div class="row">
+ <div class="col-lg-4 col-md-6 col-xs-12 ">
+      <div class="input-group">
+  <span class="input-group-addon" id="spa"> Spa & Massage</span>
+  <input type="checkbox" id="total" name="spa" id="cbox1" value=Spa" disabled class="form-control" aria-describedby="spa">
+        </div>
+    </div>
+     <div class="col-lg-4 col-md-6 col-xs-12 ">
+      <div class="input-group">
+          
+  <span class="input-group-addon" id="Dîner"> Dîner</span> 
+  <input type="checkbox" id="total" name="dinner" id="cbox1" value=dinner" disabled class="form-control" aria-describedby="Dîner" >
 
-<p>   <label><input type="checkbox" id="cbox1" class="1" value="Spa" name="spa"> Spa & Massage</label><br>
-<label><input type="checkbox"  id='subject' value="Diner" name="dinner">Dîner</label><br>
-<label>Complément<input type="text"  id='subject' value="optional" name="optional"></label>
+        </div>
+    </div>
+</div>
+  <div class="col-lg-6 col-md-8 col-xs-12 ">
+      <div class="input-group">
+  <span class="input-group-addon" id="optional"> {{ "Complément"|trans()}}</span>
+  <input type="text"  id='subject' value="optional" name="optional"  class="form-control" aria-describedby="optional" >
+        </div>
+    </div>
+<p>  
 
 </p>
 
 </fieldset>
-<h3>  {{ "Information_Paiement "|trans()}}</h3>
+<h3>  {{ "Information_Paiement"|trans()}}</h3>
 <fieldset>
 <legend> {{ "Information_Paiement"|trans()}}</legend>
 <div class="row">
  <div class="col-lg-4 col-md-4 col-xs-12 ">
       <span class="input-group-addon" id="carte"> {{ "Numéro_de_carte"|trans()}}</span>
-  <input name="num_carte" type="text" id="subject"  disabled class="form-control" aria-describedby="carte" required="required">
+  <input name="num_carte" type="text" id="subject"   class="form-control" aria-describedby="carte" >
  </div> 
     <div class="col-lg-4 col-md-4 col-xs-12 ">
-     <span class="input-group-addon" id="expiration"> {{ "date_d_expiration_de_carte : "|trans()}}</span>
-  <input name="date_exp" type="text" id="date_exp" placeholder="MM-AAAA"  disabled class="form-control" aria-describedby="expiration" required="required">
+     <span class="input-group-addon" id="expiration"> {{ "date_d_expiration_de_carte"|trans()}}</span>
+  <input name="date_exp" type="text" id="date_exp" placeholder="MM-AAAA"   class="form-control" aria-describedby="expiration" >
+    </div>
+  <div class="col-lg-4 col-md-4 col-xs-12 ">
+     
+    <span class="input-group-addon" id="CVC">CVC</span>
+  <input name="cvc" type="number" id="CVC" placeholder="0000" maxlength="4"  class="form-control" aria-describedby="CVC" >
     </div>
 </div>
 
-    <span class="input-group-addon" id="expiration">CVC</span>
-  <input name="cvc" type="number" id="CVC" placeholder="0000" maxlength="4"  disabled class="form-control" aria-describedby="expiration" required="required">
   
 
 </p>
-<input id="acceptTerms-2" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
-<input type="submit"  id="submit" value="Reserver">
+<input id="acceptTerms-2" name="acceptTerms" type="checkbox" class="required"> <label for="acceptTerms-2"><a href="{{ path('terms')}}"></a> {{ "Terms_and_Conditions"|trans()}}</label>
+
 </fieldset>
 
 </form>
 </div>
-<div class="col-lg-12 col-md-12 ">
+<div class="col-lg-12 col-md-12 col-xs-12 ">
         <small><p> {{ "condition_d_annulation"|trans()}}</p>
-        </small><img class="img-responsive" src="images/logopayment.png">
+        </small><img class="img-responsive" src="{{asset ("images/logopayment.png")}}">
     </div>
 
 		
@@ -478,6 +506,7 @@ form.steps({
 headerTag: "h3",
 bodyTag: "fieldset",
 transitionEffect: "slideLeft",
+loadingTemplate: '<span class="spinner"></span> ',
 onStepChanging: function (event, currentIndex, newIndex)
 {
 // Allways allow previous action even if the current form is not valid!
@@ -503,7 +532,7 @@ return form.valid();
 },
 onFinished: function (event, currentIndex)
 {
-alert("Submitted!");
+form.submit();
 }
 }).validate({
 errorPlacement: function errorPlacement(error, element) { element.before(error); }

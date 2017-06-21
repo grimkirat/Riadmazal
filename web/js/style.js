@@ -67,7 +67,7 @@ var TextScramble = function () {
     _classCallCheck(this, TextScramble);
 
     this.el = el;
-    this.chars = '!<>-_\\/[]{}—=+*^?#________';
+    this.chars = '!<>-_\\/[]{}—=+*^?#___';
     this.update = this.update.bind(this);
   }
 

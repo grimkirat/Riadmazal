@@ -31,12 +31,17 @@ Tarifications:
 Reservation:
     path: /Reservation
     defaults: { _controller: RiadMazalBundle:Default:reservation }
+    schemes:  [https]
 Contact:
     path: /Contact
     defaults: { _controller: RiadMazalBundle:Default:contact }
 Offre:
     path: /Offers_Promotions
     defaults: { _controller: RiadMazalBundle:Default:offre }
-language :
-    path: /%locale%/
-    defaults: { _controller: RiadMazalBundle:Default:language }
+Mail:
+    path: /mail
+    defaults: { _controller: RiadMazalBundle:Default:Email }
+    schemes:  [https]
+terms:
+    path: /terms
+    defaults: { _controller: RiadMazalBundle:Default:Email }

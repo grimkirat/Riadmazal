@@ -9,7 +9,7 @@
 
 <div class="col-md-12 col-lg-12 col-xs-12">
 							<div class="col-md-12 col-lg-12 col-xs-12">
-								<h3>contact</h3>
+								<h3> {{ "contact"|trans() }}</h3>
 								</div>
                                 	<div class="text">
 					<p>{{ "Pour_tous_renseignements_veuillez_remplir_le_formulaire_ou_nous_contacter_directement"|trans() }}</p>
@@ -19,19 +19,19 @@
           <form id="contact-form" class="form" action="#" method="POST" role="form">
               <div class="form-group">
                   <label class="form-label" for="name">{{ "Nom_Complet"|trans() }}</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Nom" tabindex="1" required>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="{{ "Nom_Complet"|trans() }}" tabindex="1" required>
               </div>                            
               <div class="form-group">
                   <label class="form-label" for="email"> {{ "Email"|trans() }}</label>
-                  <input type="email" class="form-control" id="email" name="email" placeholder=" Email" tabindex="2" required>
+                  <input type="email" class="form-control" id="email" name="email" placeholder=" {{ "Email"|trans() }}" tabindex="2" required>
               </div>                            
               <div class="form-group">
                   <label class="form-label" for="subject">{{ "Sujet"|trans() }}</label>
-                  <input type="text" class="form-control" id="subject" name="subject" placeholder="Sujet" tabindex="3">
+                  <input type="text" class="form-control" id="subject" name="subject" placeholder="{{ "Sujet"|trans() }}" tabindex="3">
               </div>                            
               <div class="form-group">
                   <label class="form-label" for="message">{{ "Message"|trans() }}</label>
-                  <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="Message..." tabindex="4" required></textarea>                                 
+                  <textarea rows="5" cols="50" name="message" class="form-control" id="message" placeholder="{{ "Message"|trans() }}..." tabindex="4" required></textarea>                                 
               </div>
               <div class="text-center">
                   <button type="submit" class="btn btn-start-order">{{ "Envoyer"|trans() }}</button>
@@ -40,7 +40,7 @@
       </div>
           	
 						<div class="col-md-6 col-lg-6 col-xs-12">
-						<h3 class="block-title">Localisation</h3>
+						<h3 class="block-title"> {{ "Localisation"|trans() }}</h3>
 								
 									<div class="col-md-12 col-lg-12 col-xs-12" >
 										<iframe src="https://maps.google.com/maps?ie=UTF8&amp;cid=11373724376070200429&amp;q=Riad+mazal&amp;gl=US&amp;hl=fr&amp;hq=Riad+mazal&amp;hnear=&amp;ll=31.642695,-8.012294&amp;spn=0.006295,0.006295&amp;t=m&amp;output=embed"></iframe>
@@ -61,7 +61,7 @@
 								
 							
                             <div class="text">
-                            <p>En arrivant de sud pour Boulevard Yacoub El Mansour en direction nord, tourner à gauche au croisement avec Rue Erraouda à la hauteur du <a href="#">Restaurant Casanova</a> au feu rouge,  embouchée Rue <a href="#">Erraouda</a>, tourné à la seconde sortie à gauche, donc à droite : au fond de la route vous trouverez <a href="#">Riad Mazal</a>.</p>
+                            <p>{{ "route_riad_text"|trans() }}</p>
                             </div>
 								</div>
 					 </div></div> </div>

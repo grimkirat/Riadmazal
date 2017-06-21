@@ -6,4 +6,14 @@ parameters:
 services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
-#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+#        arguments: ["@another_service_name", "plain_value", "%parameter_name%"] services:
+    admin.offres:
+        class: RiadMazal\RiadMazalBundle\Admin\OffresAdmin
+        arguments: [~, RiadMazal\RiadMazalBundle\Entity\Offres, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Offres }
+    admin.reservation:
+        class: RiadMazal\RiadMazalBundle\Admin\ReservationAdmin
+        arguments: [~, RiadMazal\RiadMazalBundle\Entity\Reservation, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Reservation }

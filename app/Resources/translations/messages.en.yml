@@ -6,6 +6,7 @@ Dans_le_raffinement_des_chambres_du_Riad_Mazal_on_trouve_tout_le_charme_et_le_my
 Cliquez_sur_votre_devise: Cliquez sur votre devise   
 'Divers Services': Other Services
 Divers_Services: Other Services
+Chambre : Room
 Divers_Services_Reservations_de_restaurants: Miscellaneous Services Restaurant reservations
 Divers_Services_Transfer_toute_destinations: Miscellaneous Services Transfers to all destinations
 Dégustation_chez_l_habitant: Tasting at the inhabitant
@@ -32,13 +33,13 @@ Les_suites_et_Les_chambres_du_Riad_Mazal_Etoile_text: Located on the 1st floor o
 Les_suites_et_Les_chambres_du_Riad_Mazal_Lis_text: Located on the 1st floor of the riad, it is very bright with its windows and balcony on garden, while being quiet, a spacious bathroom, minibus, terrace, satellite tv, quality bedding with a bed in 180 cm And a dominant color lily, it encourages you to "well being".
 Les_suites_et_Les_chambres_du_Riad_Mazal_Lune_text: This room has a balcony, with modern gray and beige colors, or you feel calm and tranquil. It contains bed of 160cm, bathroom, dressing and leaves.
 Les_suites_et_Les_chambres_du_Riad_Mazal_Rose_text: Located on the 1st floor, it is the Grand Suite of the Riad with a terrace overlooking the garden, a room with a large bed of 200 cm, a living room with fireplace and 2 small sofa bed, a large bathroom with a shower , Large bath, dressing room; The Suite is equipped with satellite television and a minibare, its decoration etnique in the tones of rose, invites you to the "doceur"
-Les_suites_et_Les_chambres_du_Riad_Mazal_Soleil_text: Les_suites_et_Les_chambres_du_Riad_Mazal_Soleil_text   
+Les_suites_et_Les_chambres_du_Riad_Mazal_Soleil_text: This room has two twin beds, bathroom and dressing area. This luminous room contains red and yellow  tones creating a warm, sunny atmosphere. 
 Les_suites_et_Les_chambres_du_Riad_Mazal_text: In the refinement of the rooms of the Riad Mazal one finds all the charm and the oriental mystery.
 Marrakech_en_Montgolfière: 'Marrakech en Montgolfière'
 Marrakech_en_Montgolfière_text: The Montgolfière is another way to discover Marrakech, seen from the sky. Just one hour from Jemaa El Fna, the hot air balloon becomes a time machine during the flight, you will discover the contrasts existing between the city and the countryside that surrounds it. A few kilometers and centuries separate us from Marrakech 
 Message: Message
 Montant: Amount
-Nom_Complet: Full Name
+Nom_Complet': Full Name
 Nom_Complet: Full Name   
 Nombre_d_adulte: Number of adult
 Nombre_d_enfant: Number of children
@@ -82,14 +83,23 @@ date_d_expiration de carte : Card expiration date
 date_arrivée: 'Arrival date'
 date_départ: 'Departure date'
 exurtion_text: Excursion to Marrakech, visit the historic heart of the medina of Marrakech - Visit Marrakech historical discovery of the medieval city and its main monuments of the medina Jemaa El Fna, Koutoubia mosque, Souks, Menara, The Majorelle Gardens, the Sadian Tombs, the Badi Palace, the Bahia Palace, the Medersa ben Youssef and the Dar Si Saïd Museum are the main visits not to be missed during your stay in Marrakech
-galery_text: The hospitality is a permanent state of mind, it is an availability that accompanies every step of the client's stay. Our Riad welcomes you in pure Moroccan tradition and offers you hospitality and tranquility with its outdoor swimming pool surrounded by Bouganvilliers and geraniums, Marrakech rose bushes and palm trees. The relaxing hour, you will find the serenity and calm in our Moroccan salons and the patio with its fountain, the intimacy in the European lounge, the magnificent view On the mountains of the Atlas of the solariumFor your well-being, we put at your disposal our SPA with its hammam, and massage room.
+galery_text: The hospitality is a permanent state of mind, it is an availability that accompanies every step of the client's stay.
+galery_text1: Our Riad welcomes you in pure Moroccan tradition and offers you hospitality and tranquility with its outdoor swimming pool surrounded by Bouganvilliers and geraniums, Marrakech rose bushes and palm trees. The relaxing hour, you will find the serenity and calm in our Moroccan salons and the patio with its fountain, the intimacy in the European lounge, the magnificent view On the mountains of the Atlas of the solariumFor your well-being, we put at your disposal our SPA with its hammam, and massage room.
+
 galery_title: Riad Mazal, An address of quality
-introduction: Riad Mazal is a guest house, located in the heart of Gueliz in Marrakech, not far from the antique shops, shopping center, Majorelle Garden and 10 minutes from Jamaa el Fna by car. Our Riad offers you hospitality and tranquility, with its swimming pool, the hammam, the spa, also the refinement in its rooms and suites where you find all the charm and the mystery oriental
+introduction: Riad Mazal is a guest house, located in the heart of Gueliz in Marrakech, not far from the antique and moderns shopping center, the famous Majorelle Garden and 10 minutes from Jamaa el Fna by car. Our Riad offers you hospitality and tranquility, with its garden and swimming pool, the hammam, the spa, the dining rooms and relaxing, also the refinement in its rooms and suites where you find all the charm and the mystery oriental
 plus_d_informations: more informations
-promo_text: There are promotional offers at the moment!
+promo_text: until 30 June Riad Mazal invites you to enjoy 20% of reduction on your reservation 
 tarifition_saison_haute_text: High season From 21st March to 31st May and from 20th December to 6th January
 tarifition_saison_normal_text: Normal Season From 1 January to 20 March and from 1 June to 19 December   
 tarifition_text: Rates subject to change without notice   
 vol_raison: For aerological reasons, flights always take place very early in the morning around 5:00 or 6:00 depending on the season
+promo_title: Offers And Promotions
+Nom_Complet: Full Name 
 title_page: Riad MAZAL, Riad marrakech,Riad in the Red City Best Luxious Riads Hotels in Marrakech. free WIFI, SPA, Restaurant, Piscine, Special offers available now.
+Sujet: Subject
+route_riad_text: Coming from the south to Boulevard Yacoub El Mansour in the north direction, turn left at the crossroads with Rue Erraouda at the Casanova restaurant at the traffic light, in the Rue Erraouda, turn on the second exit on the left, then on the right at the bottom From the road you will find Riad Mazal.
 Keywords_page: luxury riads in marrakech,marrakech riad bathroom,marrakech riad flickr,sublime riad marrakech,marrakech morocco,best riads in morocco,piscine riad marrakech,moroccan aubergine recipes,moroccan argan oil,moroccan accessories,moroccan art,moroccan architecture,moroccan arabic,moroccan airlines,moroccan ashtrays, location marrakech riads,top luxury riads in marrakech,morocco riads outside,lodging, accommodation, hotel,vacation, vacations, vacation packages, vacation package,discount ,cheap, round, round trip, cars , reservation, travel,riad decor marrakech,tripadvisor marrakech riads,medina marrakech,modern riad marrakech,medina riad marrakech,marrakech riad ,marrakech airport,marrakech airport arrivals,marrakech airport departures,marrakech all inclusive holidays,marrakech all inclusive,marrakech airport transfers,marrakech apartment,marrakech airport to city,riad marrakech plan Marrakech Riad, Marrakech Riads, Riads, accommodation, holidays, luxury hotel Marrakech, luxury riad Marrakech, marrakesh, marrakesh holiday, marrakesh holidays, marrakesh hotels, riad medina, riads marrakesh, marrakech ryad, morocco riad, riad, riad hotel, riad hotel marrakech, riad in marrakech, riad marrakech, riad marrakesh, riads, ryad, ryad marrakech, centre ville, gueliz, vancance,holidays,holiday,responsive 
+Numéro_de_carte: Carte Number
+date_d_expiration_de_carte:  Carte expiration date
+Terms_and_Conditions: I agree with the Terms and Conditions Riad Mazal
